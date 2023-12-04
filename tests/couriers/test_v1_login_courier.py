@@ -33,8 +33,7 @@ class TestLoginCourier:
 
         assert self.checker.status_code_and_body_checker(response=response,
                                                          expected_status_code=400,
-                                                         expected_body={'code': 400, 'message':
-                                                             'Недостаточно данных для входа'}
+                                                         expected_body={'code': 400, 'message':'Недостаточно данных для входа'}
                                                          )
 
     @pytest.mark.parametrize("payload", payload['incorrect_credentials'])

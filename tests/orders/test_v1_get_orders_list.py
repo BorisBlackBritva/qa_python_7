@@ -1,5 +1,6 @@
 from helpers.helpers import ManageOrders, Checkers
 
+
 class TestGetOrdersList:
 
     m_orders = ManageOrders()
@@ -10,5 +11,3 @@ class TestGetOrdersList:
         response = self.m_orders.get_orders_list()
 
         assert self.checker.orders_list_body_cheker(response)
-
-

@@ -2,6 +2,7 @@ from helpers.helpers import ManageCouriers, Checkers
 from helpers.constants import Constants
 import pytest
 
+
 class TestCreateCourier:
 
     m_couriers = ManageCouriers()
@@ -48,4 +49,3 @@ class TestCreateCourier:
 
         cls.m_couriers.delete_courier(response1.json()['id'])
         cls.m_couriers.delete_courier(response2.json()['id'])
-
